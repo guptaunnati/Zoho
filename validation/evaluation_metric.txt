@@ -1,0 +1,37 @@
+Tests:
+1. Training set: train the model; compute loss and adjust parameters using gradient descent
+
+2. Validation set: evaluate the model during training, so can adjust hyperparameters, to get the best version of the model
+
+3. Testing set: to test diff type of models and approaches, and chosse the model with best accuracy
+
+
+## Evaluation metric:
+
+An evaluation metric can be used to offer another perspective on how your model is going.
+
+# Calculate accuracy (a classification metric)
+def accuracy_fn(y_true, y_pred):
+    correct = torch.eq(y_true, y_pred).sum().item() # torch.eq() calculates where two tensors are equal
+    acc = (correct / len(y_pred)) * 100 
+    return acc
+
+
+for epoch in range(num_epochs):
+    # Training phase
+    for batch in train_loader:
+        # Generate predictions
+        # Calculate loss
+        # Compute gradients
+        # Update weights
+        # Reset gradients
+    
+    # Validation phase
+    for batch in val_loader:
+        # Generate predictions
+        # Calculate loss
+        # Calculate metrics (accuracy etc.)
+    # Calculate average validation loss & metrics
+    
+    # Log epoch, loss & metrics for inspection
+

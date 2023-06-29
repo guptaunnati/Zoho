@@ -1,0 +1,10 @@
+## RFFT (Real-valued Fast Fourier Transform) 
+-variant of the FFT (Fast Fourier Transform) algorithm 
+-optimized for real-valued input signals
+-mathematical technique: used to transform a time-domain signal into its frequency-domain representation
+-produces a complex-valued spectrum, but because the input signal is real-valued, the spectrum exhibits certain symmetries that allow it to be represented using only real values. This results in a significant reduction in computation time and memory usage compared to the standard FFT.
+
+-used in signal processing applications such as audio and image processing. 
+-audio processing, the RFFT is often used to compute the frequency spectrum of an audio signal, which can be used for tasks such as filtering, feature extraction, and visualization.
+
+In Python, the RFFT can be computed using the rfft function in the scipy.fft module. The function takes an array of real-valued input data as its argument, and returns an array of complex-valued output data representing the frequency spectrum of the input. The output array contains only the positive frequency components of the spectrum, since the negative frequencies can be obtained by taking the complex conjugate of the positive frequencies. The rfft function also accepts several optional arguments that can be used to control the behavior of the transform, such as the number of points to use in the FFT, the sampling rate of the input data, and the axis along which to compute the transform.

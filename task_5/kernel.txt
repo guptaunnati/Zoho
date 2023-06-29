@@ -1,0 +1,33 @@
+def apply_kernel(image, kernel):
+    ri, ci = image.shape       # image dimensions
+    rk, ck = kernel.shape      # kernel dimensions
+    ro, co = ri-rk+1, ci-ck+1  # output dimensions
+    output = torch.zeros([ro, co])
+    for i in range(ro): 
+        for j in range(co):
+            output[i,j] = torch.sum(image[i:i+rk,j:j+ck] * kernel)
+    return output
+
+
+
+sample_image = torch.tensor([
+    [3, 3, 2, 1, 0], 
+    [0, 0, 1, 3, 1], 
+    [3, 1, 2, 2, 3], 
+    [2, 0, 0, 2, 2], 
+    [2, 0, 0, 0, 1]
+], dtype=torch.float32)
+
+sample_kernel = torch.tensor([
+    [0, 1, 2], 
+    [2, 2, 0], 
+    [0, 1, 2]
+], dtype=torch.float32)
+
+apply_kernel(sample_image, sample_kernel)
+
+
+Output:
+tensor([[12., 12., 17.],
+        [10., 17., 19.],
+        [ 9.,  6., 14.]])

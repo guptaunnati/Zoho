@@ -1,0 +1,177 @@
+Python runs-> interpreter system
+(code can be executed as soon as it is written)
+-prototyping : quick
+
+Extension: .py  
+========================================================
+
+COMMENT:
+# this is a  single line comment
+
+''' this is a 
+    multiple line
+    comment '''
+
+=====
+
+CASTING:
+str(3) = '3'
+int(3) = 3
+float(3) = 3.0
+
+**cannot cast complex
+
+=====
+
+TYPE:
+x=3
+type(x) ...int
+
+=====
+x, y, z = <value1>, <value2>, <value3>
+---x = <value1>
+---y = <value2>
+---z = <value3>
+
+x = y = z = <value>
+
+=====
+
+OUTPUT:
+print("<value>")
+**there is \n by default:  print(*objet, sep=' ', end='\n') 
+
+print("<value>", end=" ") : add " " at the end
+
+=====
+
+INPUT:
+input()
+
+=====
+
+VARIABLE:
+1. Global variable : variable outside the function 
+2. Local variable : variable inside the function
+
+=====
+
+DATATYPE:
+text : str
+num : int , float, complex
+sequence : list, tuple, range
+mapping : dict
+set : set, frozenset
+boolean : bool
+binary : bytes, bytearray, memoryview 
+
+=====
+LIBRARY:
+RANDOM:
+-no random() function in python
+- import ; random => import random
+
+random.choice(seq): select one from sequence
+random.randint(a, b): no from a to b, inclusive
+random.shuffle(x)
+
+STATISTICS:
+statiscs.mean([90, 100])
+
+SYS:
+sys.argv[n] : argument vector 
+sys.exit() : exits the program
+=====
+
+STRINGS:
+x = "abcdhello'
+x[0] = 'a'
+x[1] = 'b'
+
+length: len(x) => 4
+
+check string:
+in: print("ab" in x) => true
+noy in: print ("ab" not in x) => false
+
+slicing strings (substring):
+print(x[2 : 5]) => cdh
+from start: print(x[ : 5])  => abcdh 
+to end : print(x[2 : ])  => cdhello
+negative indexing: print(x[-5 : -2])  => hel
+
+modify strings:
+capitalize first letter: x.capitalize()  => Abchello
+capitalize first letter of every word: x.title()
+upper: x.upper()  => ABCDHELLO
+lower: x.lower()  => abcdhello
+remove whitespaces: x.strip()
+replace string : x.replace('ab', 'AB')  => ABdhello
+split string: returns a list  x.split("c")  => ['ab', 'dhello']
+concatenate: y= x[2:5]+" " + x   => y="cdh abcdhello"
+***concatenate string + string , string + int not possible
+
+format string:
+age =35
+text = "my age {}"
+print(text.format(age))  => my age 36
+
+=====
+
+OPERATOR:
+x**y : x^y
+x//y : x/y, rounds result down to nearest whole no
+arithmeti operators: +, -, *, /, %
+logical operator: and, or, not
+conditional operators: ==, <, >, <=, >=, !=
+in, not in
+
+=====
+
+DATATYPE:
+
+LIST: ordered, changeable, allow duplicate
+mylist = ["abc", "def", "ghi"]
+mylist2 = ["xyx"]
+length: len(mylist)
+type: type(mylist) => <class 'list'>
+add: mylist.insert(<index>, <value>)
+     mylist.append(<value>): at the end of the list
+extend: mylist.extend(mylist2)  => ["abc", "def", "ghi", "xyx"]
+remove: mylist.remove(<value>)
+remove from specific index: mylist.pop(<index>)
+                            mylist.pop() : removes last item
+delete: del mylist[index]
+        del mylist : delete list
+        mylist.clear() : empty list 
+
+TUPLE: ordered, unchangable, allow duplicate
+mytuple=("abc", 78)
+changes=> typecast: list => apply changes => typecast: tuple
+
+SET: unordered, unchangeable(can add and remove), no duplicates
+myset ={"abc", 12, 23.9}
+add: myset.add(<value>)
+remove: myset.remove(<value>)
+        myset.discard(<value>)
+        ***the value u are asking to remove is not in the set, you will gwt a error message, but in discard u dont get a error message
+        myset,pop() : remove a random element
+
+update: set1.update(set2)  => set1 = set1 + set2
+clear: myset.clear() : empty set
+
+DICTIONARIES: ordered, changeable, no duplicates
+mydict={
+    "brand" : "ford"
+    "model" : "mustang"
+    "year" : 1964 
+}
+-key : values
+mydict.keys() : list the keys
+mydict.value() : list th values
+access: mydict.get["key"]
+        or
+        mydict["key"]
+change: mydict["keys"] = <value>
+        or 
+        mydict.update("key" = <value>)

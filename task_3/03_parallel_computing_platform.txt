@@ -1,0 +1,13 @@
+Parallel computing platforms are software frameworks that enable the development of applications that can take advantage of the parallel processing capabilities of multiple computing resources, such as GPUs and other accelerators.
+
+Some popular parallel computing platforms include:
+
+1. CUDA: developed by Nvidia, CUDA is a programming platform that enables software developers to write programs that can take advantage of the parallel processing capabilities of Nvidia GPUs.
+
+2. OpenCL: developed by the Khronos Group, OpenCL is an open standard for parallel computing that is supported by a wide range of GPUs and other accelerators.
+
+3. oneAPI: developed by Intel, oneAPI is a programming platform that enables software developers to write applications that can run on a variety of Intel CPUs, GPUs, and FPGAs.
+
+4. DirectCompute: developed by Microsoft, DirectCompute is a programming platform that enables software developers to write programs that can take advantage of the parallel processing capabilities of GPUs on Windows-based systems.
+
+

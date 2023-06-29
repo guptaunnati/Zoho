@@ -1,0 +1,27 @@
+NEURAL NETWORK:
+================
+-ML Algorithm
+-consist: nodes or neurons -> process info and learn from data
+
+LAYERS (3):
+1. Input
+2. Hidden
+3. Output
+
+                    |
+                    | Raw data
+                    |
+                  Input
+                    |
+                    | processing->raw data
+                    |
+                  Hidden 
+                    |
+                  Output
+                    |
+                    | Final Result 
+                    | (Classifiation,Regresssion,Prediction ...)
+
+
+During training, a neural network adjusts the weights of the connections between neurons to minimize the difference between the predicted output and the actual output.
+Done using: optimization algorithm such as gradient descent.

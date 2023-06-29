@@ -1,0 +1,26 @@
+Dunder methods in Python are the methods having two prefix and suffix underscores in the method name. 
+Dunder here means “Double Under (Underscores)”. These are Commonly used for operator overloading. 
+
+
+Few examples for magic methods are: __init__, __add__, __len__, __repr__ etc.
+
+The __init__ method for initialization is invoked without any call, when an instance of a class is created, like constructors in certain other programming languages.
+
+The __new__ method creates and returns the instance of a class. The primary argument of the __new__ method is the class that has to be instantiated, and the rest are the arguments mentioned during the class call.
+In most cases, we do not need to define a __new__ method. If we go for a __new__ method implementation, then referencing the superclass is a must. 
+
+Another essential point to note, the __init__ method of the instantiated class get executes, only if the __new__  method returns an instance of the same class.
+
+The__del__ method is invoked on destroying an instance of a class – either through direct deletion or memory restoration by the garbage collector. 
+
+The __str__ method requires one positional argument – self – and it returns a string. It is called when an object is passed to the str() constructor. 
+
+__int__, __float__ and __complex__ methods
+The __int__ method executes upon calling the int constructor, and it returns an int; It converts the complex objects into primitive int type. Likewise, __float__ and _complex__ methods execute on passing the object to float and complex constructor, respectively.
+
+__bool__ method
+The __bool__ magic method in python takes one positional argument and returns either true or false. Its purpose is either to check an object is true or false, or to explicitly convert to a Boolean.
+
+The __eq__ method executes when two objects are compared using == operator. It takes two positional arguments – the self, and the object to check the equality. In most cases, if the object on the left side is defined, then its equivalence is checked first
+
+The __ne__ magic method executes, when != operator is used. In most cases, we don’t need to define the __ne__ method; Upon using the != operator, the python interpreter will execute the __eq__ method and reverse the result.

@@ -1,0 +1,31 @@
+Create a conda environment and activate that environment on start up of terminal.
+
+Virtual environments allow us to manage Python projects, packages and versions efficiently.
+
+Install Conda:
+sudo apt-get update
+sudo apt-get install curl
+curl -O <linl>
+ls
+bash <file>
+
+Create environment:
+source ~/.bashrc
+conda create --name <name> python=<version>
+
+Activate/Deactivate:
+conda activate <name>
+conda deactivate
+
+To remove base conda as default:
+conda deactivate
+conda config --set auto_activate_base false
+
+
+conda env list : list conda virtual environments
+conda list: list packages
+conda config -c <channel_name> <package>
+conda config add channels <channnel>
+conda install <package>
+conda config --show channels
+

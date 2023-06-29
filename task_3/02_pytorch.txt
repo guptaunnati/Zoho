@@ -1,0 +1,22 @@
+PyTorch is an open-source machine learning framework that is widely used for building and training deep neural networks. 
+
+It was developed primarily by Facebook's AI research group and is designed to be flexible, modular, and user-friendly.
+
+One of the key features of PyTorch is its dynamic computational graph, which allows for more flexibility in building and modifying neural network architectures. 
+
+PyTorch also provides extensive support for parallel processing, making it well-suited for training large models on GPUs.
+
+PyTorch provides a range of pre-built modules and functions for building neural networks, including fully-connected layers, convolutional layers, recurrent layers, and activation functions. It also includes tools for optimizing the training process, such as stochastic gradient descent and other optimization algorithms.
+
+Overall, PyTorch is a powerful and flexible machine learning framework that is well-suited for building and training deep neural networks. Its user-friendly interface, extensive pre-built modules, and dynamic computational graph make it a popular choice for researchers and developers alike.
+
+
+To install PyTorch, you can follow these general steps:
+
+1. Check if your system has a compatible CUDA driver if you want to use GPU acceleration for your neural networks. If you don't have a compatible CUDA driver, you can still use PyTorch, but the training process may be slower.(IF U HAVE NVIDIA GPU)
+2. Install Anaconda or Miniconda package manager, which will make it easier to manage Python packages and dependencies.
+3. Create a new conda environment for PyTorch. You can do this by running the following command in the terminal: conda create --name myenv python=3.8
+4. Activate the new environment by running the following command: conda activate myenv
+5. Install PyTorch using conda. You can do this by running the following command, which will install PyTorch with CPU support: conda install pytorch torchvision torchaudio cpuonly -c pytorch
+6. If you have a compatible CUDA driver and want to use GPU acceleration, you can instead run this command to install PyTorch with CUDA support: conda install pytorch torchvision torchaudio cudatoolkit=11.1 -c pytorch -c conda-forge
+

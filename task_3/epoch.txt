@@ -1,0 +1,16 @@
+To train a model, we need
+=> loss function
+=> optimizer
+
+==================================
+
+"epoch" refers to a complete cycle through a dataset during training in machine learning and deep learning models.
+Iterations => Epoch
+
+- hyperparameter
+(determines the number of times the entire training dataset is presented to the model for learning.)
+
+-Each epoch => accuracy
+          => loss
+
+-With every epoch accuracy should increase, loss should decrease

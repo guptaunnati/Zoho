@@ -1,0 +1,20 @@
+
+Linear regression:
+-statistical method => modeling the relationship between a dependent variable and one or more independent variables.
+-continuous dependent variable
+-continuous or categorical independent variables
+-assume : relationship => linear
+        : errors are normally distributed and have constant variance
+-goal: estimate the coefficients of the independent variables that best predict the dependent variable.
+
+Logistic regression:
+-statistical method => modeling the relationship between a dependent variable and one or more independent variables.
+-binary dependent variable (0 or 1)
+-continuous or categorical independent variables
+-estimates the probability of the dependent variable being 1 given the independent variables
+-used to transform the linear combination of the independent variables into a probability score between 0 and 1.
+-assumes : relationship => nonlinear
+         : errors are binomially distributed  
+
+
+In summary, linear regression is used for continuous dependent variables, while logistic regression is used for binary dependent variables. Linear regression assumes a linear relationship between the dependent variable and the independent variables, while logistic regression assumes a nonlinear relationship.

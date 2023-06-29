@@ -1,0 +1,39 @@
+ *-display UNCLAIMED             
+       description: 3D controller
+       product: TU117GLM [Quadro T1000 Mobile]
+       vendor: NVIDIA Corporation
+       physical id: 0
+       bus info: pci@0000:01:00.0
+       version: a1
+       width: 64 bits
+       clock: 33MHz
+       capabilities: bus_master cap_list rom
+       configuration: driver=nvidia latency=0
+       resources: irq:180 memory:ec000000-ecffffff memory:c0000000-cfffffff memory:d0000000-d1ffffff ioport:3000(size=128) memory:ed000000-ed07ffff
+  *-display
+       description: VGA compatible controller
+       product: CoffeeLake-H GT2 [UHD Graphics 630]
+       vendor: Intel Corporation
+       physical id: 2
+       bus info: pci@0000:00:02.0
+       logical name: /dev/fb0
+       version: 00
+       width: 64 bits
+       clock: 33MHz
+       capabilities: vga_controller bus_master cap_list rom fb
+       configuration: depth=32 driver=i915 latency=0 resolution=1920,1080
+       resources: irq:163 memory:eb000000-ebffffff memory:80000000-8fffffff ioport:4000(size=64) memory:c0000-dffff
+
+
+Issue:
+Outdated or no NVIDIA driver 
+
+1. Install a suitable driver from NVDIA site.
+2. Open a terminal and navigate to the directory where you downloaded the NVIDIA driver.
+3. Make the driver file executable by running the following command:
+    $ chmod +x NVIDIA-Linux-x86_64-<version>.run
+    Replace <version> with the version number of the NVIDIA driver you downloaded.
+4. Run the following command to install the NVIDIA driver:
+    $ sudo ./NVIDIA-Linux-x86_64-<version>.run
+5. Verify that the NVIDIA driver is installed and working by running the following command:
+    $ nvidia-smi

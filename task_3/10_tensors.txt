@@ -1,0 +1,150 @@
+-Tensors are the fundamental building block of machine learning.
+-Their job is to represent data in a numerical way.
+-For example, you could represent an image as a tensor with shape [3, 224, 224] which would mean [colour_channels, height, width], as in the image has 3 colour channels (red, green, blue), a height of 224 pixels and a width of 224 pixels.
+
+
+torch.tensor
+
+Initializing:
+    torch.tensor()
+
+    >>> torch.tensor([[1., -1.], [1., -1.]])
+    tensor([[ 1.0000, -1.0000],
+        [ 1.0000, -1.0000]])
+    >>> torch.tensor(np.array([[1, 2, 3], [4, 5, 6]]))
+    tensor([[ 1,  2,  3],
+        [ 4,  5,  6]])
+
+
+===============
+WARNING
+
+torch.tensor() always copies data. If you have a Tensor data and just want to change its requires_grad flag, use requires_grad_() or detach() to avoid a copy. If you have a numpy array and want to avoid a copy, use torch.as_tensor().
+================
+
+
+A tensor of specific data type can be constructed by passing a torch.dtype and/or a torch.device to a constructor or tensor creation op:
+
+>>> torch.zeros([2, 4], dtype=torch.int32)
+tensor([[ 0,  0,  0,  0],
+        [ 0,  0,  0,  0]], dtype=torch.int32)
+>>> cuda0 = torch.device('cuda:0')
+>>> torch.ones([2, 4], dtype=torch.float64, device=cuda0)
+tensor([[ 1.0000,  1.0000,  1.0000,  1.0000],
+
+
+Data type
+
+                                dtype               |        CPU tensor       |           GPU tensor
+
+32-bit floating point   torch.float32 or torch.float    torch.FloatTensor           torch.cuda.FloatTensor
+64-bit floating point   torch.float64 or torch.double   torch.DoubleTensor          torch.cuda.DoubleTensor
+
+16-bit floating point [1]
+
+torch.float16 or torch.half
+
+torch.HalfTensor
+
+torch.cuda.HalfTensor
+
+16-bit floating point [2]
+
+torch.bfloat16
+
+torch.BFloat16Tensor
+
+torch.cuda.BFloat16Tensor
+
+32-bit complex
+
+torch.complex32 or torch.chalf
+
+64-bit complex
+
+torch.complex64 or torch.cfloat
+
+128-bit complex
+
+torch.complex128 or torch.cdouble
+
+8-bit integer (unsigned)
+
+torch.uint8
+
+torch.ByteTensor
+
+torch.cuda.ByteTensor
+
+8-bit integer (signed)
+
+torch.int8
+
+torch.CharTensor
+
+torch.cuda.CharTensor
+
+16-bit integer (signed)
+
+torch.int16 or torch.short
+
+torch.ShortTensor
+
+torch.cuda.ShortTensor
+
+32-bit integer (signed)
+
+torch.int32 or torch.int
+
+torch.IntTensor
+
+torch.cuda.IntTensor
+
+64-bit integer (signed)
+
+torch.int64 or torch.long
+
+torch.LongTensor
+
+torch.cuda.LongTensor
+
+Boolean
+
+torch.bool
+
+torch.BoolTensor
+
+torch.cuda.BoolTensor
+
+quantized 8-bit integer (unsigned)
+
+torch.quint8
+
+torch.ByteTensor
+
+/
+
+quantized 8-bit integer (signed)
+
+torch.qint8
+
+torch.CharTensor
+
+/
+
+quantized 32-bit integer (signed)
+
+torch.qint32
+
+torch.IntTensor
+
+/
+
+quantized 4-bit integer (unsigned) [3]
+
+torch.quint4x2
+
+torch.ByteTensor
+
+/
+ 

@@ -1,0 +1,23 @@
+# Sound:
+
+- Produced by vibration of an object
+- Vibrations cause air molecules to oscillate
+- Changes in air pressure create  wave
+
+Sound wave travels through space using air as a medium
+
+
+# waveform:
+
+- frequency
+- intensity
+- timbre
+
+
+Sound (waveforms)  ->  periodic
+                   ->  aperiodic
+
+
+Audio(2):
+1. Mono
+2. Stereo

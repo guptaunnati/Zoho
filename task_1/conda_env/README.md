@@ -1,0 +1,1 @@
+Create a conda environment and activate that environment on start up of terminal. 

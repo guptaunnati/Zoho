@@ -1,0 +1,1 @@
+Create a main branch and sample remote branches, work on cherry-pick merge, fast-forward merge and squashed merge.

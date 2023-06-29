@@ -1,0 +1,76 @@
+$gitinit : initialize repo
+$git status : repo status
+$git log : reord of commits
+$git log --oneline : single line commits
+
+COMMITING:
+$git add <file_name> : add file to staged area
+$git add . : add all unstaged file sto staged area
+$git commit -m <message>: commit changes to the repo
+$git commit -am <message> : add and commit
+$git commit --amend : rewrite message or add/remove file commited
+
+BRANCH:
+$git branch : list the branches
+$git branch <branch_name> : create a branch
+$git branch -d <branch_name> : delete <branch_name>
+$git branch -D <branch_name : forcefully delete <branch_name>
+$git branch -m <branch_name> : rename branch
+
+SWITCH B/W BRANCHES:
+$git checkout <branch_name> : switch to <branch_name>
+$git switch <branch_name> : switch to <branch_name>
+$git switch - : go to prev branch used
+$git switch -c <branch_name> : create <branch_name> and switch
+
+SWITCH B/W COMMIT:
+--HEAD detached
+$git checkout <commit_hash> : switch to a particular commit
+$git checkout HEAD~n : go to a commit current_commit-n, n is number range(1, last_commit)
+
+DISCARDING CHANGES:
+$git checkout HEAD <file_name> : discard changes of unstaged dir/files
+$git checkout --<file_name>
+$git restore <file_name> : discard changes
+$git restore --source HEAD~n <file_name> : file at commit HEAD~need
+$git restore -staged <file_name> : unstage a staged file
+
+MERGING:
+$git merge <branch_name>: merge <current_branch> with <branch_name>
+$git cherry-pick <commit_1> <commit_2> : merges particular commits
+
+REBASING:
+$git rebase <branch_name> : picks the branch and add infront of the main branch 
+$git rebase -i HEAD~n : we can enter into interactive mode
+                        -reword : change the commit message
+                        -fixup : merges the commit with its prev commit, along with changes
+                        -drop : drop the commit and its changes too
+
+DIFF:
+$git diff : diff b/w current dir and unstaged dir
+$git diff HEAD: staged and unstaged both changes
+$git diff --staged : diff b/w staged files
+$git diff --cached : diff b/w staged files
+$git diff <branch_name> : diff b/w last commit of branches
+$git diff <commit_1> <commit_2> : diff b/w <commit_1> and <commit_2>
+
+STASHING:
+$git stash : stash the changes, no need to commit, switch to branches
+$git stash save
+$git stash pop : pop the changes stashed to work on
+$git stash apply : apply the changes
+$git stash list : list the stash, multiple stash
+$git statsh apply <stash_id> : apply a particular stash, multiple stash
+$git stash drop <stash_id> : remove a stash with <stash_id>
+$git stash clear : remove all stash 
+
+RESET:
+$git reset <commit_n> : removes commits from the history from <commit_n+1> to current commit, but changes stays
+$git reset --hard <commit_n> : removes commit and its changes too
+
+REVERT:
+$git revert <commit_n> : revert to <commit_n>, creates a new commit
+
+TAG:
+$git tag : list the tags
+$git tag -l "*<value>*" : list the tags with <value>

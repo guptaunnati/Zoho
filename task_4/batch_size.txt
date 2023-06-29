@@ -1,0 +1,16 @@
+## Batch size :
+-hyperparameter 
+-determines: number of samples that are processed before the model updates its parameters. 
+-The choice of batch size can impact the speed, convergence, and generalization of the model.
+
+# for selecting an appropriate batch size:
+
+1. Memory requirements: A larger batch size requires more memory to store the activations and gradients during forward and backward propagation, respectively. This can become a bottleneck for larger models or when training on GPUs with limited memory.
+
+2. Speed of training: Larger batch sizes may result in faster training times because there are fewer weight updates per epoch. However, smaller batch sizes can help avoid getting stuck in poor local minima because the noise introduced by small batches can help the model escape.
+
+3. Generalization: The choice of batch size can also impact the generalization of the model. A small batch size introduces more noise into the gradient estimates, which can result in a better generalization performance, especially when the training data is limited. However, too small of a batch size can lead to poor convergence and slow training.
+
+4. Stochasticity: The noise introduced by small batches makes training more stochastic, which can help the model explore the solution space more effectively.
+
+- batch size used conventionaly = 32 

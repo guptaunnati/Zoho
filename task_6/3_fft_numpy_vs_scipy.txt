@@ -1,0 +1,19 @@
+## numpy.fft v/s scipy.fft
+
+Both numpy.fft and scipy.fft are Python libraries that provide functions for computing various types of Fourier transforms, including the FFT (Fast Fourier Transform), the IFFT (Inverse Fast Fourier Transform), and the RFFT (Real-valued Fast Fourier Transform). However, there are some differences between these two libraries.
+
+Here are some of the main differences between numpy.fft and scipy.fft:
+
+1. API: The numpy.fft library provides a more limited API compared to scipy.fft. numpy.fft only provides functions for computing the FFT and IFFT, while scipy.fft provides a more comprehensive set of functions that includes the FFT, IFFT, RFFT, DFT (Discrete Fourier Transform), IDFT (Inverse Discrete Fourier Transform), and many more.
+
+2. Performance: scipy.fft generally provides better performance than numpy.fft, especially for large arrays. This is because scipy.fft uses more optimized algorithms and has better memory handling capabilities.
+
+3. Functionality: scipy.fft provides several additional features that are not available in numpy.fft, such as support for multi-dimensional arrays, support for non-uniformly sampled data, and support for FFT filtering.
+
+4. Output format: numpy.fft returns complex-valued output for all transforms, while scipy.fft returns complex-valued output for most transforms but also supports returning real-valued output for the RFFT.
+
+In summary, scipy.fft provides a more comprehensive set of functions with better performance compared to numpy.fft, making it a better choice for most signal processing applications. However, numpy.fft may be more suitable for applications that only require the FFT and IFFT transforms and where performance is not a critical factor.
+
+
+
+

@@ -1,0 +1,1 @@
+Launch a terminal and start printing the current time. This time should be continuously updating. Now keep this process running even after ending the terminal session. You should be able to attach to this terminal back upon need.

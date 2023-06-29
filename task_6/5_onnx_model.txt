@@ -1,0 +1,15 @@
+# ONNX (Open Neural Network Exchange) 
+-open-source format for representing deep learning models
+-provides an interoperable way to exchange models between different deep learning frameworks, such as PyTorch, TensorFlow, Caffe2, and others. 
+-ONNX models can be used for inference on a variety of platforms, including mobile devices, cloud-based systems, and edge devices.
+
+ONNX models consist of a protobuf file format, which contains the network topology, parameters, and metadata. 
+    The topology defines the structure of the model, including the types of layers, their inputs and outputs, and their parameters.     
+    The parameters are the learned weights and biases of the model, which are used to make predictions.
+
+
+## ONNX Model:
+To create an ONNX model, you first need to train a deep learning model using one of the supported frameworks. Once you have trained the model, you can convert it to the ONNX format using the appropriate converter tool provided by the framework.
+
+## USES:
+ONNX models can be used for a variety of tasks, such as image classification, object detection, semantic segmentation, and natural language processing. They can be deployed on a variety of platforms, such as mobile devices, cloud-based systems, and edge devices.

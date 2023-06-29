@@ -1,0 +1,7 @@
+## ONNX (Open Neural Network Exchange)
+Interoperable standard format for AI models
+
+Data Collection -> Training   -----Conversion------->  Inferencing -> Deployment
+
+
+Training Framework       ----------->       Deployment Target

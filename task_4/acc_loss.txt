@@ -1,0 +1,12 @@
+## Accuracy
+
+The accuracy is a metric that measures the proportion of correctly classified instances over the total number of instances. While accuracy is a simple and intuitive metric, it may not always be the best indicator of performance. For example, in imbalanced datasets, accuracy can be misleading, and a model that always predicts the majority class can still achieve a high accuracy.
+
+
+## Loss
+
+In contrast, the loss function measures the quality of the model's output on each instance, taking into account the confidence of the model's predictions. The cross-entropy loss function penalizes the model more heavily for incorrect predictions with high confidence and less heavily for incorrect predictions with low confidence. Therefore, optimizing the cross-entropy loss can lead to a more calibrated and accurate model.
+
+
+## Summary
+In summary, while accuracy is a common performance metric for classification tasks, the choice of loss function is critical for the model to learn to make accurate and calibrated predictions. Cross-entropy is a commonly used loss function for classification tasks that can improve the performance of the model by accounting for the confidence of the predictions.

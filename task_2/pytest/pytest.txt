@@ -1,0 +1,82 @@
+Unit Test: To test functions.
+
+
+Pytest: third party unit testing, catching exceptions automatically, to give a standart output
+
+Install pytest: $pip install pytest
+
+$pytest <file_name>
+
+To use a folder as with tsting files, u need to add an empty file "__init__.py", so its treats that folder as package.
+
+$pytest <folder_name>
+
+Unit Test:
+Unit tests are a form of automated tests - this simply means that the test plan is executed by a script rather than manually by a human. They serve as the first level of software testing and are typically written in the form of functions that validate the behavior of various functionalities within a software program. 
+
+Python testing frameworks
+unittest
+Pytest
+doctest
+nose2
+Testify
+Hypothesis
+
+
+Creating a simple test
+Creating a test is simple with Pytest. To demonstrate this functionality, we’ve created a script called calcualte_age.py. This script has only one function, get_age, which is responsible for calculating a user's age, given their date of birth. 
+
+import datetime
+
+def get_age(yyyy:int, mm:int, dd:int) -> int:
+    dob = datetime.date(yyyy, mm, dd)
+    today = datetime.date.today()
+    age = round((today - dob).days / 365.25)
+    return age
+
+We have not specified any arguments, but we have created another script in the same directory called test_calculate_age.py: thus, when the directories are recursed the test will be discovered.  In this script, we have a single test, test_get_age, to validate our function is working accordingly. 
+
+from calculate_age import get_age
+
+def test_get_age():
+    # Given.
+    yyyy, mm, dd = map(int, "1996/07/11".split(""))   
+    # When.
+    age = get_age(yyyy, mm, dd)
+    # Then.
+    assert age == 26 
+
+Pytest Fixtures 
+The purpose of test fixtures is to provide a fixed baseline upon which tests can reliably and repeatedly execute.
+
+Fixtures can be used to share test data between tests, execute setup and teardown methods before and after test executions respectively.
+
+To understand fixtures, we will re-write the above test_sum function and make use of fixtures to get test data-
+
+import pytest
+@pytest.fixture
+def get_sum_test_data():
+        return [(3,5,8), (-2,-2,-4), (-1,5,4), (3,-5,-2), (0,5,5)]
+def test_sum(get_sum_test_data):
+        for data in get_sum_test_data:
+                num1 = data[0]
+                num2 = data[1]
+                expected = data[2]
+                assert sum(num1, num2) == expected
+
+The purpose of test fixtures is to provide a fixed baseline upon which tests can reliably and repeatedly execute.
+
+Fixtures can be used to share test data between tests, execute setup and teardown methods before and after test executions respectively.
+
+To understand fixtures, we will re-write the above test_sum function and make use of fixtures to get test data-
+
+import pytest
+@pytest.fixture
+def get_sum_test_data():
+        return [(3,5,8), (-2,-2,-4), (-1,5,4), (3,-5,-2), (0,5,5)]
+def test_sum(get_sum_test_data):
+        for data in get_sum_test_data:
+                num1 = data[0]
+                num2 = data[1]
+                expected = data[2]
+                assert sum(num1, num2) == expected

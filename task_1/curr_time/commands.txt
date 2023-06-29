@@ -1,0 +1,12 @@
+Launch a terminal and start printing the current time. This time should be continuously updating. Now keep this process running even after ending the terminal session. You should be able to attach to this terminal back upon need. 
+
+date +"%T"
+watch -n 1 date
+watch -n 1 date &
+jobs
+fg <id>
+
+To set current time as default:
+gedit ~/.bashrc
+overwrite:
+watch -n 1 date

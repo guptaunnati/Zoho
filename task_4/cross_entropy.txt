@@ -1,0 +1,17 @@
+## Cross-entropy:
+-loss function => classification tasks.
+-measures the difference between the predicted probability distribution and the actual probability distribution of the target variable. 
+
+The goal of the model is to minimize the cross-entropy loss, which is equivalent to maximizing the likelihood of the model parameters given the data.
+
+
+The cross-entropy loss is defined as:
+
+L(y, y_hat) = - sum(y * log(y_hat) + (1 - y) * log(1 - y_hat))
+
+where y is the actual probability distribution of the target variable (a one-hot vector for classification problems) and y_hat is the predicted probability distribution output by the model.
+
+
+# two types
+1. Binary classification: BCELoss (Binary Cross Entropy Loss)
+2. Multiple classification: CrossEntropyLoss 

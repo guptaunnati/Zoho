@@ -1,0 +1,49 @@
+Heirarchy:
+                Artificial Intelligence
+                        |
+                 Machine Learning
+                        |
+                  Deep Learning
+
+
+Machine Learning (ML):
+ML is turning things(data) into numbers and finding patterns in those numbers.
+
+Deep Learning (DL):
+DL model are designed to automatically learn hiearchical representationn of data.
+eg: image classification, NLP, speech recognisation
+
+==========================================================
+
+Traditional Program:
+Input, Rules => Output
+
+ML algorithms:
+Input, Output => Rules
+(Input: Features; Output: Liables, supervised learning)
+
+===========================================================
+
+When ML/DL?
+1. Problem with long list of rules.
+2. Continuously chamging environments.
+3. Discovering insights within large ollection of data
+
+===========================================================
+
+ML v/s DL:
+
+Generally, ML => structured data
+           DL => unstructured data (images, audio, text)
+
+Algorithms:
+            ML          |       DL
+-Random forest          | -Neural Networkd
+-Gradient Boosted Model | - Fully connected neural networks
+-Naive Bayes            | -Convolutional neural networks
+-Nearest Neighbour      | -Recurrent neural networks
+-Support Vector Machine | -Transformer
+
+the following algorithms can be used for both, depending upon the problem and approach
+
+

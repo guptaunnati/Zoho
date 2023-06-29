@@ -1,0 +1,12 @@
+## WAV (Waveform Audio File Format):
+
+The data in a WAV file array represents the amplitude of the audio signal at each point in time. The amplitude values are represented as samples and are usually stored in a two's complement signed integer format.
+
+The specific format of the data in a WAV file depends on the number of channels, the sample rate, and the bit depth. Here are some examples of how the data may be represented:
+
+1. Mono, 16-bit depth: Each sample is a 16-bit signed integer, with a range of -32768 to 32767. The array will consist of a sequence of these 16-bit values, representing the amplitude of the audio signal at each point in time.
+
+2. Stereo, 24-bit depth: Each sample is a 24-bit signed integer, with a range of -2^23 to 2^23-1. The array will consist of interleaved left and right channel samples, with each channel represented as a sequence of 24-bit values.
+
+3. Multi-channel, 32-bit float: Each sample is a 32-bit floating point value, with a range of -1.0 to 1.0. The array will consist of interleaved samples from each channel, with each channel represented as a sequence of 32-bit float values.
+Regardless of the specific format, the data in a WAV file array represents the audio waveform as a sequence of amplitude values, which can be used to reconstruct the original audio signal.

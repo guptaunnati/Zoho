@@ -1,0 +1,19 @@
+Vectorization is the process of converting raw text data into a numerical format that can be used as input to machine learning algorithms. Vectorization is a critical step in natural language processing (NLP) tasks such as sentiment analysis, text classification, and machine translation.
+
+The process of vectorization typically involves the following steps:
+
+Tokenization: The first step is to break down the text into smaller units, or tokens, such as words or phrases. Tokenization can be performed using various methods, such as whitespace tokenization, word tokenization, or sentence tokenization.
+
+Text cleaning and normalization: This step involves removing any unwanted characters or words, such as punctuation, stop words, or URLs. This can help to reduce the dimensionality of the data and improve the accuracy of the model.
+
+Creating a vocabulary: A vocabulary is a list of all the unique words or tokens in the text data. This step involves creating a dictionary or mapping between each word in the text and a unique index.
+
+Vectorization: In this step, each sentence or document is transformed into a numerical vector using the vocabulary. There are several methods of vectorization, such as bag-of-words, TF-IDF, and word embeddings.
+
+Bag-of-words: This method represents a document as a vector of word counts, where each element of the vector corresponds to the count of a specific word in the vocabulary. The resulting vectors are often very high-dimensional and sparse.
+
+TF-IDF: This method assigns a weight to each word in the bag-of-words representation, based on how often it appears in the document and across the corpus. This can help to highlight the importance of rare words and reduce the impact of common words.
+
+Word embeddings: This method represents words as dense, low-dimensional vectors that capture semantic relationships between words. Word embeddings are often pre-trained using large amounts of text data and can be used to transfer knowledge to new NLP tasks.
+
+Model training: Once the text data has been vectorized, it can be used as input to machine learning models, such as neural networks or decision trees, for tasks such as sentiment analysis, text classification, or machine translation.

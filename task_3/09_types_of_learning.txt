@@ -1,0 +1,11 @@
+Learning (3):
+1. Supervised Learning: data, labels
+2. Unsupervised and Self-supervised Learning: data
+3. Transfer Learning: patterns
+4. Reinforcement Learning
+
+Supervised Learning: In supervised learning, the machine learning algorithm is trained on a labeled dataset, where the output is known for each input. The goal is to learn a mapping function from the inputs to the outputs so that the algorithm can make accurate predictions on new, unseen data. Examples of supervised learning include classification and regression problems.
+
+Unsupervised Learning: In unsupervised learning, the machine learning algorithm is trained on an unlabeled dataset, where the output is not known. The goal is to learn patterns and relationships in the data without any specific task in mind. Examples of unsupervised learning include clustering and dimensionality reduction.
+
+Reinforcement Learning: In reinforcement learning, the machine learning algorithm learns through trial-and-error interactions with an environment. The goal is to maximize a reward signal, which is a scalar feedback signal that the algorithm receives for each action it takes. The algorithm learns to select actions that maximize the reward over time. Examples of reinforcement learning include game playing and robotics.

@@ -1,0 +1,44 @@
+Print the following details on the start up of your terminal
+Linux distribution, Kernel version, Number of cores/socket, RAM size, Number of GPU, Total memory and CPU usage of machine.
+
+
+Linux distribution:
+$cat /etc/os-release
+$cat /etc/*release
+$cat /etc/issue
+$lsb_release -a
+
+
+Kernel version:
+The Kernel is the core of Linux, the code that lets the software communicate with the hardware.
+$hostnamectl
+$uname -r  : version Number
+$uname -mrs
+$uname -a
+$cat /proc/version
+
+
+Number of cores/socket:
+CPUs = Threads per core X cores per socket X sockets
+$lscpu
+$lscpu | grep -E '^Thread|^Core|^Socket|^CPU\('
+
+
+RAM size:
+$free
+-m
+-g
+-h
+
+
+Number of GPU:
+$lspci | grep VGA
+
+
+Total memory:
+$cat /proc/meminfo
+
+
+CPU usage of machine:
+$htop
+

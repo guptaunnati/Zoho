@@ -1,0 +1,33 @@
+Start the notebook server from the command line:
+    $jupyter notebook
+
+How do I open a specific Notebook?
+The following code should open the given notebook in the currently running notebook server, starting one if necessary.
+
+jupyter notebook notebook.ipynb
+
+How do I start the Notebook using a custom IP or port?
+By default, the notebook server starts on port 8888. If port 8888 is unavailable or in use, the notebook server searches the next available port. You may also specify a port manually. In this example, we set the server’s port to 9999:
+
+jupyter notebook --port 9999
+How do I start the Notebook server without opening a browser?
+Start notebook server without opening a web browser:
+
+jupyter notebook --no-browser
+How do I get help about Notebook server options?
+The notebook server provides help messages for other command line arguments using the --help flag:
+
+jupyter notebook --help
+
+Using a command-line interface
+Notebooks can be executed from your terminal using the run subcommand. It expects notebook paths as input arguments and accepts optional flags to modify the default behavior.
+
+Running a notebook is this easy.
+
+jupyter run notebook.ipynb
+You can pass more than one notebook as well.
+
+jupyter run notebook.ipynb notebook2.ipynb
+By default, notebook errors will be raised and printed into the terminal. You can suppress them by passing the --allow-errors flag.
+
+jupyter run notebook.ipynb --allow-errors

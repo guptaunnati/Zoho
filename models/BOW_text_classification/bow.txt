@@ -1,0 +1,44 @@
+Bag-of-Words Representation
+-> https://machinelearningmastery.com/gentle-introduction-bag-words-model/
+
+
+bag-of-words model: way of representing text data when modeling text with machine learning algorithms.
+
+>> Machine learning algorithms cannot work with raw text directly; the text must be converted into numbers. Specifically, vectors of numbers. >> feature extraction or feature encoding.
+
+>> feature extraction with text data -> bag-of-words model of text.
+
+Bag-of-words:
+>> extracting features from text
+
+>> A bag-of-words is a representation of text that describes the    occurrence of words within a document. It involves two things:
+
+    1. A vocabulary of known words.
+    2. A measure of the presence of known words.
+
+>> any information about the order or structure of words in the document is discarded. 
+>> The model is only concerned with whether known words occur in the document, not where in the document.
+
+
+Steps:
+1. Collect data
+2. vocabulary
+3. Document vectors
+
+Managing vocabulary:
+>>sparse vector>>
+>>There are simple text cleaning techniques that can be used as a first step, such as:
+
+    1. Ignoring case
+    2. Ignoring punctuation
+    3. Ignoring frequent words that don’t contain much information, called stop words, like “a,” “of,” etc.
+    4. Fixing misspelled words.
+    5. Reducing words to their stem (e.g. “play” from “playing”) using stemming algorithms.
+
+>> A more sophisticated approach is to create a vocabulary of grouped words. 
+
+Scoring Words
+    Counts: Count the number of times each word appears in a document.
+    Frequencies: Calculate the frequency that each word appears in a document out of all the words in the document.
+
+TF-IDF

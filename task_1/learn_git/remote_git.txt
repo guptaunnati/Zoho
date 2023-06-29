@@ -1,0 +1,51 @@
+$git clone <url> : to copy a repo to local device
+$git config --global user.name <user_name> : configuration
+$git config --global user.email <user_email> : configuration
+
+
+=======================
+SSH(Secure Shell) Keys:
+-authentication, so u dont need to enter email and username, everytime u perform operation, like push...
+$ssh-keygen
+
+$cd .ssh
+$cat <fileNo_2>
+   or
+$cat <public_key_path>
+======================
+
+
+$git remote: list current remotes in the repo
+$git remote -v
+$git remote add origin <url> : to connect a repo on a device to the repo with <url> on hosting site
+
+origin: conventional git remote name
+
+PUSH:
+$git push <remote> <branch> : push local repo to hosting site
+$git push <remote> <local_branch>: <remote_branch> : push local branch <local_branch> to remote branch <remote_branch>
+$git push -u <remote> <branch_name> : set upstream branch, <branch_name> -> <branch_name>
+
+REMOTE BRANCH:
+$git branch -r: list remote branches
+
+FETCH:
+$git fetch <remote>: fetches the change in the remote repo to local repo
+-no changes to pwd
+-accessed through
+   $git checkout origin/main
+
+PULL:
+-updates our local repo
+-git pull = git fetch + git merge
+$git pull <remote> <branch_name>
+$git pull
+
+CLONING A REPO:
+when we clone a repo, we clone all files, all history of that repo.
+-by default only main(defaut branch) main->main
+rest of the branches origin/branch_1, origin/branch_2, ...
+
+$git switch <branch_1> : branch_1 -> origin/branch_1
+or
+$git checkout --track origin/branch_1

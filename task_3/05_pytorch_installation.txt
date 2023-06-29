@@ -1,0 +1,13 @@
+INSTALL PYTORCH
+
+Preferences:
+PyTorch Build:  Stable (1.13.1)
+Your OS:  Linux
+Package:  Conda
+Language:  Python
+Compute Platform:  CUDA 11.7
+
+
+Run this Command:
+
+conda install pytorch torchvision torchaudio pytorch-cuda=11.7 -c pytorch -c nvidia

@@ -1,0 +1,61 @@
+Framework:
+
+Framework is a collection of libraries, modules, and components that are designed to facilitate the development of applications. 
+Frameworks can provide a standard way to perform common tasks, such as handling user input, connecting to a database, or displaying data on a web page, which can help developers save time and focus on the unique aspects of their application.
+Frameworks can also be categorized as either full-stack or micro frameworks. 
+    Full-stack frameworks provide a complete solution for building an application, including components for the front-end, back-end, and database. 
+    Micro frameworks, on the other hand, provide only the bare essentials for building an application, and are designed to be lightweight and flexible.
+
+
+
+Framework v/s Libraries:
+
+A library is a collection of pre-written code modules that can be used to perform specific functions or tasks. These modules can be called from within a program to add specific functionality. 
+    For example, a developer might use a library to add a date and time picker to a web page, or to implement a complex algorithm in a machine learning application. 
+
+A framework is a more comprehensive tool that provides a complete structure or set of rules for developing an application. 
+A framework typically includes a set of libraries, modules, and components that are designed to work together in a specific way. 
+Frameworks provide a higher-level abstraction, allowing developers to focus on the unique aspects of their application, rather than worrying about the underlying details of how the application is constructed.
+
+In summary, a library provides specific functionality that can be added to an application as needed, while a framework provides a more comprehensive structure or set of rules for building an application.
+
+
+
+Machine Learning Frameworks:
+
+Machine learning frameworks are collections of libraries, modules, and tools that are designed to make it easier for developers to build and deploy machine learning models. These frameworks provide a standardized set of tools and best practices for building and training models, as well as testing, evaluating, and deploying them in production environments.
+
+Some popular machine learning frameworks include:
+
+    TensorFlow: Developed by Google, TensorFlow is a flexible and powerful open-source framework for building and deploying machine learning models. TensorFlow is used in a wide range of applications, from natural language processing and image recognition to robotics and autonomous vehicles.
+
+    PyTorch: Developed by Facebook, PyTorch is a flexible and dynamic deep learning framework that allows for easy experimentation and rapid prototyping. PyTorch is particularly popular in academic and research settings.
+
+    scikit-learn: scikit-learn is a popular machine learning library for Python that provides a wide range of algorithms and tools for data mining, data analysis, and machine learning.
+
+    Keras: Keras is a high-level neural networks API that runs on top of TensorFlow. It provides a simple and intuitive interface for building and training deep learning models.
+
+    Caffe: Developed by the Berkeley Vision and Learning Center, Caffe is a deep learning framework that is particularly well-suited for computer vision tasks, such as image classification and object detection.
+
+
+Framework v/s API:
+
+The main difference between an API and a framework is their scope and purpose. An API provides a way for applications to communicate and exchange data, while a framework provides a set of tools and best practices for building an application.
+APIs can be used within a framework, or between different frameworks, to enable communication and data exchange. For example, a web application built using a specific framework might use APIs to interact with other applications or services over the internet.
+Frameworks and APIs are often used together in software development. A framework provides a way to build an application, while APIs provide a way to connect that application with other systems and services
+
+
+Keras being a API, used as a framework?
+
+Keras is an API, it provides a comprehensive set of tools and functionality that are typically associated with a framework. It can be used as a standalone library or in conjunction with other deep learning frameworks to build and train neural networks for a wide range of applications.
+
+
+PyTorch v/s Tensorflow:
+
+Ease of use: PyTorch is generally considered to be more user-friendly and easier to learn than TensorFlow. PyTorch uses a dynamic computational graph, which makes it easier to write and debug code. TensorFlow, on the other hand, uses a static computational graph, which can make it more difficult to write and debug code.
+
+Flexibility: PyTorch is a more flexible framework than TensorFlow, allowing developers to easily experiment with different models and algorithms. PyTorch's dynamic computational graph allows developers to easily change the structure of a model during runtime, making it easier to experiment with different architectures. TensorFlow, on the other hand, is more rigid and requires more upfront planning.
+
+Deployment: TensorFlow has more robust tools for deployment and scaling, making it easier to deploy models in production environments. TensorFlow provides a range of tools for serving models on cloud platforms, mobile devices, and other environments. PyTorch is catching up in this area, but TensorFlow still has the advantage when it comes to deployment.
+
+Popularity: TensorFlow is more widely used and has a larger community than PyTorch. This means that there are more resources available for learning and using TensorFlow, as well as more pre-trained models and other resources available.
